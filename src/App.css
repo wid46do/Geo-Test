@@ -23,11 +23,24 @@
     height: auto;
 }
 
+.dropdown-menu {
+    width: 100px;
+}
+
+.jumbotron {
+    padding-top: 150px;
+    margin-bottom: 150px;
+}
+
 @media (min-width: 768px) {
     .question-section {
         padding: 150px 200px 150px 200px;
     }
     .result-page {
         padding: 150px 200px 150px 200px;
+    }
+    .jumbotron {
+        padding-top: 0px;
+        margin-bottom: 0px;
     }
 }

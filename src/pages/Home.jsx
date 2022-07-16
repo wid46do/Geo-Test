@@ -53,14 +53,14 @@ export default function Home(){
     return(
         <>
             <Navbar currentUser={currentUser}/>
-            <div className="jumbotron row mt-5">
+            <div className="jumbotron d-flex mt-5 justify-content-center">
                 <div className='col-6 d-flex justify-content-center align-items-center'>
-                    <div className="d-flex flex-column">
-                        <h2>Test your understanding</h2>
+                    <div className="d-flex flex-column m-0">
+                        <h2 className='text-center'>Test your understanding</h2>
                         <button className='btn btn-primary' onClick={startHandler}> Start </button>
                     </div>
                 </div>
-                <div className='col-6 align-items-end d-flex align-items-center'>
+                <div className='col-6 align-items-end d-flex align-items-center d-none d-lg-block'>
                     <img src={img} alt="" />
                 </div>
             </div>

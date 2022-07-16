@@ -13,16 +13,18 @@ export default function Navbar({currentUser}){
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <button className="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                {currentUser}
-                            </button>
-                            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li>
-                                    <Link to="/logout" className='dropdown-item'>
-                                        Logout
-                                    </Link>
-                                </li>
-                            </ul>
+                            <div className='dropdown me-3'>
+                                <button className="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    {currentUser}
+                                </button>
+                                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <Link to="/logout" className='dropdown-item'>
+                                            Logout
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>

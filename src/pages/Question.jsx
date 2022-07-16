@@ -14,7 +14,7 @@ export default function Question(){
     const dispatch = useDispatch();
 
     const navigate = useNavigate()
-    
+
     const currentQuestion = list[currentNumber - 1];
     const answers = [
         ...currentQuestion.incorrect_answers,
@@ -37,7 +37,7 @@ export default function Question(){
     return(
         <>
             <Navbar/>
-            <div className="question-section">
+            <div className="question-section mx-3 mx-md-0 mx-lg-0">
                 <div className="Timer d-flex justify-content-center mb-3">
                     <div className=""><Timer/></div>
                 </div>
